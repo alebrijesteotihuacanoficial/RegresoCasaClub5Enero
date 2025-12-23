@@ -1443,25 +1443,7 @@ a {
     }
 
     .carousel-arrow {
-        width: 40px;
-        height: 40px;
-        position: fixed;
-        top: auto;
-        bottom: 30%;
-        transform: none;
-    }
-
-    .carousel-arrow-left {
-        left: 10px;
-    }
-
-    .carousel-arrow-right {
-        right: 10px;
-    }
-
-    .carousel-arrow svg {
-        width: 20px;
-        height: 20px;
+        display: none;
     }
 
     /* Players Grid Mobile Carousel */
