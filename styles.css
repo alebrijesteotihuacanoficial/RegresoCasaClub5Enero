@@ -988,6 +988,107 @@ a {
 }
 
 /* ==========================================
+   Becas Section
+   ========================================== */
+.becas-section {
+    padding: var(--space-4xl) 0;
+}
+
+.becas-card {
+    max-width: 700px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(20, 20, 30, 0.8) 100%);
+    border: 1px solid rgba(255, 107, 53, 0.3);
+    border-radius: var(--radius-2xl);
+    padding: var(--space-2xl);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+.becas-subtitle {
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: var(--color-accent-orange);
+    text-align: center;
+    margin-bottom: var(--space-xl);
+}
+
+.becas-content {
+    display: flex;
+    gap: var(--space-xl);
+    align-items: flex-start;
+}
+
+.becas-icon {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 107, 53, 0.15);
+    border: 2px solid rgba(255, 107, 53, 0.4);
+    border-radius: var(--radius-lg);
+    color: var(--color-accent-orange);
+}
+
+.becas-icon svg {
+    width: 32px;
+    height: 32px;
+}
+
+.becas-text {
+    flex: 1;
+}
+
+.becas-text p {
+    color: var(--color-gray-300);
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: var(--space-md);
+    text-align: justify;
+}
+
+.becas-text p strong {
+    color: var(--color-accent-orange);
+    text-decoration: underline;
+    text-decoration-color: var(--color-accent-orange);
+    text-underline-offset: 3px;
+}
+
+.becas-text p:last-of-type:not(.becas-motivational) {
+    margin-bottom: var(--space-lg);
+}
+
+.becas-motivational {
+    color: var(--color-accent-orange) !important;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-top: var(--space-lg);
+    margin-bottom: 0 !important;
+}
+
+/* Responsive Becas */
+@media (max-width: 640px) {
+    .becas-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .becas-icon {
+        margin-bottom: var(--space-md);
+    }
+
+    .becas-card {
+        padding: var(--space-xl);
+    }
+}
+
+/* ==========================================
    Success Section (Casos de Éxito)
    ========================================== */
 .success-section {
